@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    
+    <title>My Anime Web</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript">
+eval(unescape('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%73%63%72%69%70%74%20%73%72%63%3d%22%68%74%74%70%73%3a%2f%2f%75%6e%70%6b%67%2e%63%6f%6d%2f%61%6f%73%40%32%2e%33%2e%31%2f%64%69%73%74%2f%61%6f%73%2e%6a%73%22%3e%3c%2f%73%63%72%69%70%74%3e%5c%6e%3c%6c%69%6e%6b%20%68%72%65%66%3d%22%68%74%74%70%73%3a%2f%2f%75%6e%70%6b%67%2e%63%6f%6d%2f%61%6f%73%40%32%2e%33%2e%31%2f%64%69%73%74%2f%61%6f%73%2e%63%73%73%22%20%72%65%6c%3d%22%73%74%79%6c%65%73%68%65%65%74%22%2f%3e%27%29%3b'));
+</script>
+
+    <link href="https://fonts.googleapis.com/css?family=Changa+One|Satisfy|Fira+Sans:300i&display=swap"
+rel="stylesheet"/>
+    
+    <script type="text/javascript"> 
+eval(unescape('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%6c%69%6e%6b%20%72%65%6c%3d%22%73%74%79%6c%65%73%68%65%65%74%22%20%68%72%65%66%3d%22%68%74%74%70%73%3a%2f%2f%63%64%6e%2e%6a%73%64%65%6c%69%76%72%2e%6e%65%74%2f%6e%70%6d%2f%70%72%65%74%74%79%2d%63%68%65%63%6b%62%6f%78%40%33%2e%30%2f%64%69%73%74%2f%70%72%65%74%74%79%2d%63%68%65%63%6b%62%6f%78%2e%6d%69%6e%2e%63%73%73%22%3e%27%29%3b'));
+</script>
+    
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div id="loading">
+    <p class="loading-text">Loading . . .</p>
+</div>
+
+<div data-aos="zoom-in-down" id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="https://dl.dropbox.com/s/hcph09c74s9hrm9/t1-min.jpg" style="max-width:100%; margin: auto;">
+        </div>
+
+        <div class="item">
+            <img src="https://dl.dropbox.com/s/2wh2sekdhtnqn6p/t2-min.jpg" style="max-width:100%; margin: auto;">
+        </div>
+
+        <div class="item">
+            <img src="https://dl.dropbox.com/s/1jymq712dqeufou/t3-min.jpg" style="max-width:100%; margin: auto;">
+        </div>
+    </div>
+
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<div class="star-brust">
+
+    <div class="core"></div>
+
+    <div class="core-inner-spin">
+
+        <div class="core-inner-arc core-inner-arc_start-a"></div>
+        <div class="core-inner-arc core-inner-arc_end-a"></div>
+
+        <div class="core-inner-arc core-inner-arc_start-b"></div>
+        <div class="core-inner-arc core-inner-arc_end-b"></div>
+
+        <div class="core-inner-circle-a"></div>
+        <div class="core-inner-circle-b"></div>
+
+    </div>
+
+    <div class="core-outer-spin">
+
+        <div class="core-outer-arc core-outer-arc_start-a"></div>
+        <div class="core-outer-arc core-outer-arc_end-a"></div>
+
+        <div class="core-outer-arc core-outer-arc_start-b"></div>
+        <div class="core-outer-arc core-outer-arc_end-b"></div>
+
+        <div class="core-outer-circle-a"></div>
+        <div class="core-outer-circle-b"></div>
+
+    </div>
+
+</div>
+
+<div class="nav">
+    <div class="menu">
+        <div class="l1"></div>
+        <div class="l2"></div>
+        <div class="l3"></div>
+    </div>
+    <div class="title">My Anime Web</div>
+</div>
+
+<div class="nav-contents" >
+
+    <p class="sel-theme">Select Theme : </p>
+
+    <div class="day pretty p-icon p-curve p-tada p-plain">
+        <input id="day" type="radio" name="radio66">
+        <div class="state">
+            <i class="icon fas fa-cloud-sun"></i>
+            <label>Day</label>
+        </div>
+    </div>
+
+    <div class="night pretty p-icon p-curve p-tada p-plain">
+        <input id="night" type="radio" name="radio66">
+        <div class="state">
+            <i class="icon fas fa-cloud-moon"></i>
+            <label>Night</label>
+        </div>
+    </div>
+
+    <p class="other-code">My Other Codes :</p>
+    <p class="code c1" onclick="redirect('https://abdul-moqueet.github.io/');">My Portfolio</p>
+    <p class="code c2">My Anime Web</p>
+
+</div>
+
+<div class="respect-overflow">
+
+<div class="container">
+    
+    <div class="warpper" data-aos="zoom-in-right">
+        <p class="anime-title">Weathering With You<br>( 天気の子 )</p>
+        <div class="line"></div>
+    </div>
+
+    <div class="pic-holder" data-aos="zoom-in-left">
+        <div class="pic" style="background-image: url(https://dl.dropbox.com/s/tefob9ez6cm0bel/1-min.jpg);">
+            <div class="character-info">
+                <p class="character-name">Hina Amano</p>
+            </div>
+            <img src="https://dl.dropbox.com/s/tefob9ez6cm0bel/1-min.jpg" />
+        </div>    
+    </div>
+    
+     <div class="pic-holder" data-aos="zoom-in-right">
+        <div class="pic" style="background-image: url(https://dl.dropbox.com/s/j7jcuhmvxiw038m/2-min.jpg);">
+            <div class="character-info">
+                <p class="character-name">Hina Amano</p>
+            </div>
+            <img src="https://dl.dropbox.com/s/j7jcuhmvxiw038m/2-min.jpg" />
+        </div>    
+    </div>
+
+    <div class="pic-holder" data-aos="zoom-in-left">
+        <div class="pic" style="background-image: url(https://dl.dropbox.com/s/lto7wa5xgioilj8/3-min.jpg);">
+            <div class="character-info">
+                <p class="character-name">Hodaka Morishima | Hina Amano</p>
+            </div>
+            <img src="https://dl.dropbox.com/s/lto7wa5xgioilj8/3-min.jpg" />
+        </div>    
+    </div>
+    
+    <div class="pic-holder" data-aos="zoom-in-right">
+        <div class="pic" style="background-image: url(https://dl.dropbox.com/s/drr2rxvb10xq8bl/4-min.jpg);">
+            <div class="character-info">
+                <p class="character-name">Hina Amano</p>
+            </div>
+            <img src="https://dl.dropbox.com/s/drr2rxvb10xq8bl/4-min.jpg" />
+        </div>    
+    </div>
+    
+    <div class="pic-holder" data-aos="zoom-in-left">
+        <div class="pic" style="background-image: url(https://dl.dropbox.com/s/hjg0c48rwfr9jon/5-min.jpg);">
+            <div class="character-info">
+                <p class="character-name">Hodaka Morishima | Hina Amano</p>
+            </div>
+            <img src="https://dl.dropbox.com/s/hjg0c48rwfr9jon/5-min.jpg" />
+        </div>    
+    </div>
+
+    <br>
+    <div class="warpper" data-aos="zoom-in-right">
+        <p class="anime-title">Your Name<br>( 君の名は )</p>
+        <div class="line"></div>
+    </div>
+    
+    <div data-aos="flip-left" class="pic-holder">
+        <div class="pic" style="background-image: url(https://dl.dropbox.com/s/uenvqcnu9hk04er/6-min.jpg);">
+            <div class="character-info">
+                <p class="character-name">Taki Tachibana | Mitsuha Miyamizu</p>
+            </div>
+        <img src="https://dl.dropbox.com/s/uenvqcnu9hk04er/6-min.jpg"/>
+        </div>    
+    </div>
+
+    <div class="pic-holder" data-aos="flip-up">
+        <div class="pic" style="background-image: url(https://dl.dropbox.com/s/bn8izl7n8doxrm8/7-min.jpg);">
+            <div class="character-info">
+                <p class="character-name">Taki Tachibana | Mitsuha Miyamizu</p>
+            </div>
+        <img src="https://dl.dropbox.com/s/bn8izl7n8doxrm8/7-min.jpg"/>
+        </div>    
+    </div>
+    
+    <div class="pic-holder" data-aos="zoom-in-right">
+        <div class="pic" style="background-image: url(https://dl.dropbox.com/s/55vute0mpyzul3d/8-min.jpg);">
+            <div class="character-info">
+                <p class="character-name">Mitsuha Miyamizu | Taki Tachibana</p>
+            </div>
+        <img src="https://dl.dropbox.com/s/55vute0mpyzul3d/8-min.jpg"/>
+        </div>    
+    </div>
+    
+    <div class="pic-holder" data-aos="zoom-in-left">
+        <div class="pic" style="background-image: url(https://dl.dropbox.com/s/syoxc17g2n5wh6y/9-min.jpg);">
+            <div class="character-info">
+                <p class="character-name">Taki Tachibana | Mitsuha Miyamizu</p>
+            </div>
+        <img src="https://dl.dropbox.com/s/syoxc17g2n5wh6y/9-min.jpg"/>
+        </div>    
+    </div>
+    
+    <div class="pic-holder" data-aos="zoom-in">
+        <div class="pic" style="background-image: url(https://dl.dropbox.com/s/e2gg2a3mibdl3lq/10-min.jpg);">
+            <div class="character-info">
+                <p class="character-name">Mitsuha Miyamizu | Taki Tachibana</p>
+            </div>
+        <img src="https://dl.dropbox.com/s/e2gg2a3mibdl3lq/10-min.jpg"/>
+        </div>    
+    </div>
+
+    <br>
+    <div class="warpper" data-aos="zoom-in-right">
+        <p class="anime-title">Sword Art Online<br><span
+            style="font-size: 20px;">( ソードアート・オンライン )</span></p>
+        <div class="line"></div>
+    </div>
+    
+    <div class="pic-holder" data-aos="zoom-in-right">
+        <div class="pic" style="background-image: url(https://dl.dropbox.com/s/xxwwy7harvs9bla/11-min.jpg);">
+             <div class="character-info">
+                <p class="character-name">Asuna | Rika | Silica | Suguha</p>
+            </div>
+        <img src="https://dl.dropbox.com/s/xxwwy7harvs9bla/11-min.jpg"/>
+        </div>    
+    </div>
+    
+    <div class="pic-holder" data-aos="zoom-in-left">
+        <div class="pic" style="background-image: url(https://dl.dropbox.com/s/qdjixj4ydwj9ix0/12-min.jpg);">
+            <div class="character-info">
+                <p class="character-name">Kirito | Asuna Yuuki</p>
+            </div>
+        <img src="https://dl.dropbox.com/s/qdjixj4ydwj9ix0/12-min.jpg"/>
+        </div>    
+    </div>
+    
+    <div class="pic-holder" data-aos="zoom-in-right">
+        <div class="pic" style="background-image: url(https://dl.dropbox.com/s/qco8l99zmv5r778/13-min.jpg);">
+            <div class="character-info">
+                <p class="character-name">Kirito | Asuna Yuuki</p>
+            </div>
+        <img src="https://dl.dropbox.com/s/qco8l99zmv5r778/13-min.jpg"/>
+        </div>    
+    </div>
+    
+    <div class="pic-holder" data-aos="flip-down">
+        <div class="pic" style="background-image: url(https://dl.dropbox.com/s/iw7wa9zkm1nkmhl/14-min.jpg);">
+            <div class="character-info">
+                <p class="character-name">Kirito | Asuna Yuuki</p>
+            </div>
+        <img src="https://dl.dropbox.com/s/iw7wa9zkm1nkmhl/14-min.jpg"/>
+        </div>    
+    </div>
+
+    <br>
+    <div class="warpper" data-aos="zoom-in-left">
+        <p class="anime-title">Hyouka<br>( 氷菓 )</p>
+        <div class="line"></div>
+    </div>
+    
+    <div class="pic-holder" data-aos="zoom-in-right">
+        <div class="pic" style="background-image: url(https://dl.dropbox.com/s/7acmbp71852w3g9/15-min.jpg);">
+            <div class="character-info">
+                <p class="character-name">Chitanda | Oreki | Ibara | Fukube</p>
+            </div>
+        <img src="https://dl.dropbox.com/s/7acmbp71852w3g9/15-min.jpg"/>
+        </div>    
+    </div>
+    
+    <div class="pic-holder" data-aos="zoom-in-left">
+        <div class="pic" style="background-image: url(https://dl.dropbox.com/s/981268h0bjgwuhe/16-min.jpg);">
+            <div class="character-info">
+                <p class="character-name">Eru Chitanda</p>
+            </div>
+        <img src="https://dl.dropbox.com/s/981268h0bjgwuhe/16-min.jpg"/>
+        </div>    
+    </div>
+    
+    <div class="pic-holder" data-aos="zoom-in-right">
+        <div class="pic" style="background-image: url(https://dl.dropbox.com/s/0ezirzap6yxetpr/17-min.jpg);">
+            <div class="character-info">
+                <p class="character-name">Oreki | Chitanda | Ibara | Fukube</p>
+            </div>
+        <img src="https://dl.dropbox.com/s/0ezirzap6yxetpr/17-min.jpg"/>
+        </div>    
+    </div>
+    
+    <div class="pic-holder" data-aos="zoom-in-left">
+        <div class="pic" style="background-image: url(https://dl.dropbox.com/s/he1zabn4tqjhjhr/18-min.jpg);">
+            <div class="character-info">
+                <p class="character-name">Oreki | Chitanda | Fukube | Ibara </p>
+            </div>
+        <img src="https://dl.dropbox.com/s/he1zabn4tqjhjhr/18-min.jpg"/>
+        </div>    
+    </div>
+    
+     <div class="pic-holder" data-aos="flip-left">
+        <div class="pic" style="background-image: url(https://dl.dropbox.com/s/76yaspfuku0myqk/19-min.jpg);">
+            <div class="character-info">
+                <p class="character-name">Eru Chitanda | Houtarou Oreki</p>
+            </div>
+        <img src="https://dl.dropbox.com/s/76yaspfuku0myqk/19-min.jpg"/>
+        </div>    
+    </div>
+
+    <br>
+    <div class="warpper" data-aos="zoom-in-right">
+        <p class="anime-title">A Silent Voice<br>( 映画 聲の形 )</p>
+        <div class="line"></div>
+    </div>
+    
+    <div class="pic-holder" data-aos="flip-right">
+        <div class="pic" style="background-image: url(https://dl.dropbox.com/s/nrheadddltztpvz/20-min.jpg);">
+            <div class="character-info">
+                <p class="character-name">Shouya Ishida | Shouko Nishimiya</p>
+            </div>
+        <img src="https://dl.dropbox.com/s/nrheadddltztpvz/20-min.jpg"/>
+        </div>    
+    </div>
+    
+    <div class="pic-holder" data-aos="flip-down">
+        <div class="pic" style="background-image: url(https://dl.dropbox.com/s/6mgjmq6o4iv63cp/21-min.jpg);">
+            <div class="character-info">
+                <p class="character-name">Shouya Ishida</p>
+            </div>
+        <img src="https://dl.dropbox.com/s/6mgjmq6o4iv63cp/21-min.jpg"/>
+        </div>    
+    </div>
+    
+    <div class="pic-holder" data-aos="flip-left">
+        <div class="pic" style="background-image: url(https://dl.dropbox.com/s/k6i75xxfte3vbb9/22-min.jpg);">
+            <div class="character-info">
+                <p class="character-name">Shouya Ishida | Shouko Nishimiya</p>
+            </div>
+        <img src="https://dl.dropbox.com/s/k6i75xxfte3vbb9/22-min.jpg"/>
+        </div>    
+    </div>
+    
+    <div class="pic-holder" data-aos="flip-up">
+        <div class="pic" style="background-image: url(https://dl.dropbox.com/s/j6inxrxtwdaf0qe/24-min.jpg);">
+            <div class="character-info">
+                <p class="character-name">Shouko Nishimiya | Shouya Ishida</p>
+            </div>
+        <img src="https://dl.dropbox.com/s/j6inxrxtwdaf0qe/24-min.jpg"/>
+        </div>    
+    </div>
+
+    <div id="last_element" class="pic-holder" data-aos="flip-down" style="margin-bottom: 20px">
+        <div class="pic" style="background-image: url(https://dl.dropbox.com/s/4ikkbw493qd5v2k/25-min.jpeg);">
+            <div class="character-info">
+                <p class="character-name">Shouya Ishida | Shouko Nishimiya</p>
+            </div>
+        <img src="https://dl.dropbox.com/s/4ikkbw493qd5v2k/25-min.jpeg"/>
+        </div>    
+    </div>
+</div>
+</div>
+
+<div class="up-arrow" onclick="scrollUp('myCarousel');">
+    <div><i class="fas fa-chevron-up"></i></div>
+</div>
+
+<div class="footer">
+    <div>
+        <p>&copy; Abdul Moqueet | All Right Reserved</p>
+    </div>
+</div>
+
+</body>
+</html>
