@@ -267,46 +267,61 @@ $(document).ready(function () {
 
 function scrollUp(targetElementId) {
 
-    let MIN_PIXELS_PER_STEP = 16,
-        MAX_SCROLL_STEPS = 80,
-        target = document.getElementById(targetElementId),
-        scrollTarget = target;
-
+    const _abdul_moqueet_0x4c50 = [
+        'offsetTop',
+        'abs',
+        'parentNode',
+        'getElementById',
+        'max',
+        'scrollTop',
+        'min',
+        'offsetParent',
+        'requestAnimationFrame'
+    ];
+    (function (_0x1a21a3, _0x4c50a3) {
+        const _0x8a9876 = function (_0xd56b43) {
+            while (--_0xd56b43) {
+                _0x1a21a3['push'](_0x1a21a3['shift']());
+            }
+        };
+        _0x8a9876(++_0x4c50a3);
+    }(_abdul_moqueet_0x4c50, 0xd1));
+    const _abdul_moqueet_0x8a98 = function (_0x1a21a3, _0x4c50a3) {
+        _0x1a21a3 = _0x1a21a3 - 0x0;
+        let _0x8a9876 = _abdul_moqueet_0x4c50[_0x1a21a3];
+        return _0x8a9876;
+    };
+    let MIN_PIXELS_PER_STEP = 0x10, MAX_SCROLL_STEPS = 0x50, target = document[_abdul_moqueet_0x8a98('0x1')](targetElementId), scrollTarget = target;
     do {
-        scrollTarget = scrollTarget.parentNode;
-        if (!scrollTarget) return;
-        scrollTarget.scrollTop += 1;
-    } while (scrollTarget.scrollTop === 0);
-
-    let targetY = 0;
+        scrollTarget = scrollTarget[_abdul_moqueet_0x8a98('0x0')];
+        if (!scrollTarget)
+            return;
+        scrollTarget[_abdul_moqueet_0x8a98('0x3')] += 0x1;
+    } while (scrollTarget[_abdul_moqueet_0x8a98('0x3')] === 0x0);
+    let targetY = 0x0;
     do {
-        if (target === scrollTarget) break;
-        targetY += target.offsetTop;
-    } while (target = target.offsetParent);
-
-    let pixelsPerStep = Math.max(MIN_PIXELS_PER_STEP,
-        Math.abs(targetY - scrollTarget.scrollTop) / MAX_SCROLL_STEPS);
-
-    let isUp = targetY < scrollTarget.scrollTop;
-
+        if (target === scrollTarget)
+            break;
+        targetY += target[_abdul_moqueet_0x8a98('0x7')];
+    } while (target = target[_abdul_moqueet_0x8a98('0x5')]);
+    let pixelsPerStep = Math[_abdul_moqueet_0x8a98('0x2')](MIN_PIXELS_PER_STEP, Math[_abdul_moqueet_0x8a98('0x8')](targetY - scrollTarget[_abdul_moqueet_0x8a98('0x3')]) / MAX_SCROLL_STEPS);
+    let isUp = targetY < scrollTarget[_abdul_moqueet_0x8a98('0x3')];
     let stepFunc = () => {
         if (isUp) {
-            scrollTarget.scrollTop = Math.max(targetY, scrollTarget.scrollTop - pixelsPerStep);
-            if (scrollTarget.scrollTop <= targetY) {
+            scrollTarget[_abdul_moqueet_0x8a98('0x3')] = Math[_abdul_moqueet_0x8a98('0x2')](targetY, scrollTarget['scrollTop'] - pixelsPerStep);
+            if (scrollTarget[_abdul_moqueet_0x8a98('0x3')] <= targetY) {
                 return;
             }
         } else {
-            scrollTarget.scrollTop = Math.min(targetY, scrollTarget.scrollTop + pixelsPerStep);
-
-            if (scrollTarget.scrollTop >= targetY) {
+            scrollTarget[_abdul_moqueet_0x8a98('0x3')] = Math[_abdul_moqueet_0x8a98('0x4')](targetY, scrollTarget[_abdul_moqueet_0x8a98('0x3')] + pixelsPerStep);
+            if (scrollTarget[_abdul_moqueet_0x8a98('0x3')] >= targetY) {
                 return;
             }
         }
-
-        window.requestAnimationFrame(stepFunc);
+        window['requestAnimationFrame'](stepFunc);
     };
+    window[_abdul_moqueet_0x8a98('0x6')](stepFunc);
 
-    window.requestAnimationFrame(stepFunc);
 }
 
 function redirect(targetURL) {
